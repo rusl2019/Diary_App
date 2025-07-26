@@ -1,0 +1,24 @@
+# Dependency folders
+# This folder is recreated during `npm install` and is very large.
+/node_modules
+
+# Build output folders
+# This folder is created by electron-builder (dist) or electron-forge (out).
+/dist
+
+# Log files
+# Error or debug logs from npm and other processes.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating system files
+# Metadata files created by macOS, Windows, or Linux.
+.DS_Store
+Thumbs.db
+
+# Environment variables
+# Never store files containing API keys or other sensitive data.
+.env
+.env.local
