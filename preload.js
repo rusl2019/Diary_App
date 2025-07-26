@@ -1,7 +1,9 @@
-// preload.js
-const { contextBridge, ipcRenderer } = require('electron');
+const { contextBridge, ipcRenderer } = require("electron");
 
-contextBridge.exposeInMainWorld('electronAPI', {
-  saveFile: (data) => ipcRenderer.invoke('save-file', data),
-  openFile: (password) => ipcRenderer.invoke('open-file', password),
+contextBridge.exposeInMainWorld("electronAPI", {
+  getEntries: () => ipcRenderer.invoke("get-entries"),
+  saveEntry: (data) => ipcRenderer.invoke("save-entry", data),
+  openEntry: (data) => ipcRenderer.invoke("open-entry", data),
+  deleteEntry: (data) => ipcRenderer.invoke("delete-entry", data),
+  editEntry: (data) => ipcRenderer.invoke("edit-entry", data),
 });

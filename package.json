@@ -1,5 +1,5 @@
 {
-  "name": "my-private-diary",
+  "name": "diary-app",
   "version": "1.0.0",
   "description": "A simple private diary app",
   "main": "main.js",
@@ -22,8 +22,8 @@
     "electron-builder": "^26.0.12"
   },
   "build": {
-    "appId": "com.my-private-diary.app",
-    "productName": "My Private Diary",
+    "appId": "com.diary-app.app",
+    "productName": "Diary_App",
     "linux": {
       "target": [
         "AppImage"
