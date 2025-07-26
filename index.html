@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>My Private Diary</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>My Private Diary 📝</h1>
+
+    <div class="container">
+      <textarea
+        id="diary-text"
+        placeholder="Tuliskan ceritamu di sini..."
+      ></textarea>
+
+      <div class="controls">
+        <input
+          type="password"
+          id="password"
+          placeholder="Masukkan password rahasia"
+        />
+        <div class="buttons">
+          <button id="save-btn">Simpan Diary</button>
+          <button id="open-btn">Buka Diary</button>
+        </div>
+      </div>
+
+      <p id="status-message"></p>
+    </div>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>
